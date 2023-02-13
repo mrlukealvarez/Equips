@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+        <head>
+          <meta charset="utf-8" />
+          <link rel="shortcut icon" href="/favicon.ico" />
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+          <meta name="theme-color" content="#2C5282" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link rel="manifest" href="/manifest.json" />
+          <link rel="preconnect" href="https://heapanalytics.com" />
+          <link rel="preconnect" href="https://cdn.heapanalytics.com" />
+      
+          <title>Equips</title>
+          <meta name="description" content="Welcome to Equips! Login and manage your account." />
+          <script type="module" crossorigin src="/assets/index.bf7d1706.js"></script>
+          <link rel="stylesheet" href="/assets/index.09674daf.css">
+        </head>
+        <body class="font-sans font-base bg-gray-50">
+          <noscript>You need to enable JavaScript to run this app.</noscript>
+      
+          <script nomodule>
+            alert(
+              'The Equips app requires an up to date browser: at least Mozilla Firefox 59, Google Chrome 60, or Edge 16. Internet Explorer is not supported.',
+            );
+          </script>
+      
+          <div id="root"></div>
+          <div id="promptRoot"></div>
+      
+          
+      
+          <script>
+            // https://github.com/aws-amplify/amplify-js/issues/7499
+            window.global = window;
+            var exports = {};
+          </script>
+      
+          <script>
+            window.addEventListener('beforeinstallprompt', function (e) {
+              // Prevent Chrome 67 and earlier from automatically showing the prompt
+              e.preventDefault();
+              // Stash the event so it can be triggered later.
+              window.deferredPromptToInstallApp = e;
+            });
+          </script>
+      
+          <script type="text/javascript" defer>
+            (window.heap = window.heap || []),
+              (window.loadHeap = function (e, t) {
+                (window.heap.appid = e), (window.heap.config = t = t || {});
+                var r = document.createElement('script');
+                (r.type = 'text/javascript'), (r.async = !0), (r.src = 'https://cdn.heapanalytics.com/js/heap-' + e + '.js');
+                var a = document.getElementsByTagName('script')[0];
+                a.parentNode.insertBefore(r, a);
+                for (
+                  var n = function (e) {
+                      return function () {
+                        heap.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+                      };
+                    },
+                    p = [
+                      'addEventProperties',
+                      'addUserProperties',
+                      'clearEventProperties',
+                      'identify',
+                      'resetIdentity',
+                      'removeEventProperty',
+                      'setEventProperties',
+                      'track',
+                      'unsetEventProperty',
+                    ],
+                    o = 0;
+                  o < p.length;
+                  o++
+                )
+                  heap[p[o]] = n(p[o]);
+              });
+          </script>
+        </body>
+      </html>
+
+
+
+
+
+
+
